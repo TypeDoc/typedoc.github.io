@@ -1,0 +1,13 @@
+---
+layout: 'default'
+---
+<div class="container main">
+    <div class="row">
+        <div class="col-3">
+            <%- @partial('navigation.html.eco', {menuItems: @generateMenu(@document.url, 'guides')}) %>
+        </div>
+        <div class="col-9 typography">
+            <%- @content %>
+        </div>
+    </div>
+</div>

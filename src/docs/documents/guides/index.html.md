@@ -1,4 +1,4 @@
 ---
-layout: 'default'
-title: 'Installation'
+layout: 'redirect'
+target: '/guides/installation.html'
 ---

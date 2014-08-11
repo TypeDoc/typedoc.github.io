@@ -1,0 +1,20 @@
+<% renderMenu = (items) => %>
+    <ul>
+        <% for item in items: %>
+            <li<% if item.state: %> class="selected"<% end %>>
+                <% if item.state != 'current': %>
+                    <a href="<%= item.url %>"><%= item.title %></a>
+                <% else: %>
+                    <a href="<%= item.url %>" class="current"><%= item.title %></a>
+                <% end %>
+                <% if item.children: %>
+                    <%- renderMenu(item.children) %>
+                <% end %>
+            </li>
+        <% end %>
+    </ul>
+<% end %>
+
+<nav class="navigation">
+    <%= renderMenu @menuItems[0].children %>
+</nav>

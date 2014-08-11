@@ -132,21 +132,97 @@ table { border-collapse: collapse; border-spacing: 0; }
 td, th { padding: 0; }
 
 .container { margin: 0 auto; padding: 0 40px; max-width: 1024px; }
+.container.main { padding-top: 100px; }
+
+.row { position: relative; margin: 0 -10px; padding: 0; list-style: none; font-size: 0; }
+
+.col, .col-1, .col-sm-1, .col-2, .col-sm-2, .col-3, .col-sm-3, .col-4, .col-sm-4, .col-5, .col-sm-5, .col-6, .col-sm-6, .col-7, .col-sm-7, .col-8, .col-sm-8, .col-9, .col-sm-9, .col-10, .col-sm-10, .col-11, .col-sm-11, .col-12, .col-sm-12 { display: inline-block; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; padding: 0 10px; margin: 0; font-size: 16px; vertical-align: top; }
+.col > *:first-child, .col-1 > *:first-child, .col-sm-1 > *:first-child, .col-2 > *:first-child, .col-sm-2 > *:first-child, .col-3 > *:first-child, .col-sm-3 > *:first-child, .col-4 > *:first-child, .col-sm-4 > *:first-child, .col-5 > *:first-child, .col-sm-5 > *:first-child, .col-6 > *:first-child, .col-sm-6 > *:first-child, .col-7 > *:first-child, .col-sm-7 > *:first-child, .col-8 > *:first-child, .col-sm-8 > *:first-child, .col-9 > *:first-child, .col-sm-9 > *:first-child, .col-10 > *:first-child, .col-sm-10 > *:first-child, .col-11 > *:first-child, .col-sm-11 > *:first-child, .col-12 > *:first-child, .col-sm-12 > *:first-child { margin-top: 0; }
+.col > *:last-child, .col-1 > *:last-child, .col-sm-1 > *:last-child, .col-2 > *:last-child, .col-sm-2 > *:last-child, .col-3 > *:last-child, .col-sm-3 > *:last-child, .col-4 > *:last-child, .col-sm-4 > *:last-child, .col-5 > *:last-child, .col-sm-5 > *:last-child, .col-6 > *:last-child, .col-sm-6 > *:last-child, .col-7 > *:last-child, .col-sm-7 > *:last-child, .col-8 > *:last-child, .col-sm-8 > *:last-child, .col-9 > *:last-child, .col-sm-9 > *:last-child, .col-10 > *:last-child, .col-sm-10 > *:last-child, .col-11 > *:last-child, .col-sm-11 > *:last-child, .col-12 > *:last-child, .col-sm-12 > *:last-child { margin-bottom: 0; }
+
+.col-1 { width: 8.33333%; }
+
+.offset-1 { margin-left: 8.33333%; }
+
+.col-2 { width: 16.66667%; }
+
+.offset-2 { margin-left: 16.66667%; }
+
+.col-3 { width: 25%; }
+
+.offset-3 { margin-left: 25%; }
+
+.col-4 { width: 33.33333%; }
+
+.offset-4 { margin-left: 33.33333%; }
+
+.col-5 { width: 41.66667%; }
+
+.offset-5 { margin-left: 41.66667%; }
+
+.col-6 { width: 50%; }
+
+.offset-6 { margin-left: 50%; }
+
+.col-7 { width: 58.33333%; }
+
+.offset-7 { margin-left: 58.33333%; }
+
+.col-8 { width: 66.66667%; }
+
+.offset-8 { margin-left: 66.66667%; }
+
+.col-9 { width: 75%; }
+
+.offset-9 { margin-left: 75%; }
+
+.col-10 { width: 83.33333%; }
+
+.offset-10 { margin-left: 83.33333%; }
+
+.col-11 { width: 91.66667%; }
+
+.offset-11 { margin-left: 91.66667%; }
+
+.col-12 { width: 100%; }
+
+.offset-12 { margin-left: 100%; }
 
 html, body { height: 100%; }
 
-body { background-color: white; padding: 0; margin: 0; color: #333333; font-family: "Source Sans Pro", sans-serif; }
+body { background-color: white; padding: 0; margin: 0; color: #333333; font-family: "Source Sans Pro", sans-serif; font-size: 16px; }
 
-header { position: fixed; z-index: 1024; top: 0; left: 0; width: 100%; background-color: white; box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); text-transform: uppercase; font-size: 20px; line-height: 60px; }
-header .logo { display: inline-block; padding-left: 37px; text-decoration: none; color: #333333; background-image: url(../images/logo-32.png); background-repeat: no-repeat; background-position: left center; }
-header nav { float: right; }
-header nav ul { list-style: none; padding: 0; margin: 0; }
-header nav li { display: inline-block; margin-left: 20px; }
-header nav a { color: #333333; text-decoration: none; }
+.typography h1 { position: relative; left: -3px; font-weight: 300; font-size: 64px; color: #285786; margin: 2em 0 0.5em 0; }
+.typography h2 { position: relative; left: -2px; font-weight: 300; font-size: 42px; color: #285786; margin: 1.5em 0 0.5em 0; }
+.typography h3 { position: relative; left: -2px; font-weight: 300; font-size: 32px; color: #285786; margin: 1.5em 0 0.5em 0; }
+.typography p { line-height: 1.5em; margin: 1em 0; }
+.typography a { color: #9600ff; text-decoration: none; }
+.typography a:hover { text-decoration: underline; }
+.typography dl.specs { line-height: 1.5em; margin: 1em 0; border-bottom: 1px solid #eeeeee; }
+.typography dl.specs dt { float: left; width: 100px; padding: 10px 0; border-top: 1px solid #eeeeee; }
+.typography dl.specs dd { margin-left: 100px; padding: 10px 0 10px 10px; border-top: 1px solid #eeeeee; }
+.typography code, .typography pre { font-family: "Source Code Pro", fixed; padding: 0.2em; margin: 0; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); }
+.typography pre { padding: 10px; }
+.typography pre code { padding: 0; background-color: transparent; }
+
+header { position: fixed; z-index: 1024; top: 0; left: 0; width: 100%; height: 60px; background-color: white; box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); text-transform: uppercase; font-size: 20px; }
+header .logo { display: inline-block; padding-left: 37px; float: left; text-decoration: none; color: #333333; line-height: 60px; background-image: url(../images/logo-32.png); background-repeat: no-repeat; background-position: left center; }
+header nav { text-align: right; font-size: 0; }
+header nav ul { display: inline-block; padding: 0; margin: 0 -15px 0 0; list-style: none; }
+header nav li { display: inline; }
+header nav a { display: inline-block; padding: 0 15px; color: #333333; text-decoration: none; font-size: 20px; line-height: 60px; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
+header nav a.current { color: #9600ff; }
+header nav a:hover { opacity: 0.75; }
+
+footer { padding-bottom: 100px; }
 
 .jumbotron { height: 750px; max-height: 75%; min-height: 150px; padding-top: 60px; -moz-box-sizing: border-box; box-sizing: border-box; }
 .jumbotron .visual { position: relative; width: 100%; height: 100%; background-image: url(../images/jumbotron.png); background-position: center center; }
 .jumbotron .container { position: absolute; top: 50%; left: 0; right: 0; }
 .jumbotron .body { position: absolute; top: 0; left: 50%; right: 0; margin: 40px 0 0 -94px; font-size: 20px; }
-.jumbotron h1, .jumbotron p { margin: 0; }
-.jumbotron h1 { display: none; }
+
+.navigation { padding: 20px 20px 0 0; }
+.navigation ul { list-style: none; padding: 0; margin: 0; border-bottom: 1px solid #eeeeee; }
+.navigation a { display: block; padding: 10px 0; text-decoration: none; color: #333333; border-top: 1px solid #eeeeee; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
+.navigation a.current { color: #9600ff; }
+.navigation a:hover { opacity: 0.75; }

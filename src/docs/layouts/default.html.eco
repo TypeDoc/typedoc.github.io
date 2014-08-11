@@ -21,7 +21,7 @@
         <a href="/" class="logo">TypeDoc</a>
         <nav>
             <ul>
-                <!-- li><a href="/guides">Guides</a></li -->
+                <li><a <%- if @isInCollection(@document.url, 'guides') then 'class="current"' else '' %> href="/guides/installation.html">Guides</a></li>
                 <li><a href="/api">API</a></li>
                 <li><a href="https://github.com/sebastian-lenz/typedoc">GitHub</a></li>
             </ul>
@@ -30,6 +30,10 @@
 </header>
 
 <%- @content %>
+
+<footer>
+
+</footer>
 
 <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 <%- @partial('analytics') %>

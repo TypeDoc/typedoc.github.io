@@ -19,6 +19,10 @@ var docpadConfig = {
 				site: 'typedoc.io'
 			}
 		},
+        isInCollection: function(url, collectionName) {
+            var collection = this.getCollection(collectionName);
+            return !!collection.findOne({url:url});
+        },
 		getPreparedTitle: function() {
 			if (this.document.title) {
 				return '' + this.document.title + ' | ' + this.site.title;
@@ -34,9 +38,9 @@ var docpadConfig = {
 		}
 	},
 	collections: {
-		pages: function() {
+		guides: function() {
 			return this.getCollection('documents').findAllLive({
-				relativeOutDirPath: 'pages'
+				relativeOutDirPath: 'guides'
 			});
 		}
 	},
@@ -50,6 +54,11 @@ var docpadConfig = {
 		}
 	},
 	plugins: {
+        redirector: {
+            redirects: {
+                "guides/": "guides/installation.html"
+            }
+        }
 	},
 	events: {
 	}
