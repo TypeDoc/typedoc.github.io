@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Usage | TypeDoc</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta name="generator" content="DocPad v6.64.3" />
+    <link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:400,700" /><link  rel="stylesheet" href="/assets/css/main.css" />
+
+    <link rel="shortcut icon" href="/favicon.ico" >
+</head>
+<body class="ui">
+
+<header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a class="current" href="/guides/installation.html">Guides</a></li>
+                <li><a href="/api">API</a></li>
+                <li><a href="https://github.com/sebastian-lenz/typedoc">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container main">
+    <div class="row">
+        <div class="col-3">
+            
+
+<nav class="navigation">
+    
+    <ul>
+        
+            <li>
+                
+                    <a href="/guides/installation.html">Installation</a>
+                
+                
+            </li>
+        
+            <li class="selected">
+                
+                    <a href="/guides/usage.html" class="current">Usage</a>
+                
+                
+            </li>
+        
+            <li>
+                
+                    <a href="/guides/themes.html">Themes</a>
+                
+                
+            </li>
+        
+    </ul>
+
+</nav>
+
+        </div>
+        <div class="col-9 typography">
+            <h1 id="usage">Usage</h1>
+<h2 id="arguments">Arguments</h2>
+<p>TypeDoc accepts most of the command line arguments that the TypeScript compiler accepts. All
+arguments that are passed in without a flag will be parsed as input files. TypeDoc accepts
+directories as input files, it will .</p>
+<p>In order to create a documentation for an entire project you simply type:</p>
+<pre><code class="lang-bash">$ typedoc --out path/to/documentation/ path/to/typescript/project/
+</code></pre>
+<h3 id="out">out</h3>
+<pre><code class="lang-bash">$ typedoc --out &lt;path/to/documentation/&gt;
+</code></pre>
+<p>Specifies the location the documentation should be written to.</p>
+<h3 id="name">name</h3>
+<pre><code class="lang-bash">$ typedoc --name &lt;Documentation title&gt;
+</code></pre>
+<p>Set the name of the project that will be used in the header of the template.</p>
+<h3 id="readme">readme</h3>
+<pre><code class="lang-bash">$ typedoc --readme &lt;path/to/readme|none&gt;
+</code></pre>
+<p>Path to the readme file that should be displayed on the index page. Pass none to disable the index page and start the documentation on the globals page.</p>
+<h3 id="module">module</h3>
+<pre><code class="lang-bash">$ typedoc --module &lt;commonjs or amd&gt;
+</code></pre>
+<p>Specify module code generation: &quot;commonjs&quot; or &quot;amd&quot;</p>
+<h3 id="target">target</h3>
+<pre><code class="lang-bash">$ typedoc --target &lt;ES3 or ES5&gt;
+</code></pre>
+<p>Specify ECMAScript target version: &quot;ES3&quot; (default), or &quot;ES5&quot;</p>
+<h3 id="exclude">exclude</h3>
+<pre><code class="lang-bash">$ typedoc --exclude &lt;pattern&gt;
+</code></pre>
+<p>Exclude files by the given pattern when a path is provided as source</p>
+<h3 id="theme">theme</h3>
+<pre><code class="lang-bash">$ typedoc --theme &lt;path/to/theme&gt;
+</code></pre>
+<p>Specify the path to the theme that should be used</p>
+<h3 id="includedeclarations">includeDeclarations</h3>
+<pre><code class="lang-bash">$ typedoc --includeDeclarations
+</code></pre>
+<p>Turn on parsing of .d.ts declaration files.</p>
+<h3 id="externalpattern">externalPattern</h3>
+<pre><code class="lang-bash">$ typedoc --externalPattern &lt;pattern&gt;
+</code></pre>
+<p>Define a pattern for files that should be considered being external.</p>
+<h3 id="excludeexternals">excludeExternals</h3>
+<pre><code class="lang-bash">$ typedoc --excludeExternals
+</code></pre>
+<p>Prevent externally resolved TypeScript files from being documented.</p>
+<h3 id="verbose">verbose</h3>
+<pre><code class="lang-bash">$ typedoc --verbose
+</code></pre>
+<p>Print more information while TypeDoc is running.</p>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+
+</footer>
+
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-53674298-1', 'typedoc.io');
+	ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
