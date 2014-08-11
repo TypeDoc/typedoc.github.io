@@ -1,0 +1,42 @@
+{
+  "name": "typedoc-website",
+  "description": "Source files for typedoc.io",
+  "private": true,
+  "version": "0.1.0",
+  "author": {
+    "name": "Sebastian Lenz",
+    "url": "http://www.sebastian-lenz.de/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TypeDoc/typedoc.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TypeDoc/typedoc.github.io/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/sebastian-lenz/typedoc/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "docpad": "~6.64.0",
+    "docpad-plugin-eco": "~2.0.3",
+    "docpad-plugin-marked": "~2.2.0",
+    "docpad-plugin-partials": "~2.9.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-sass": "^0.7.4",
+    "grunt-autoprefixer": "^1.0.0",
+    "grunt-docs": "^0.8.0",
+    "grunt-gh-pages": "^0.9.1"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= @getPreparedTitle() %></title>
+    <meta name="description" content="<%= @getPreparedDescription() %>" />
+    <meta name="keywords" content="<%= @getPreparedKeywords() %>" />
+
+    <%- @getBlock('meta').toHTML() %>
+    <%- @getBlock('styles').add(@site.styles).toHTML() %>
+
+    <link rel="shortcut icon" href="/favicon.ico" >
+</head>
+<body class="ui">
+
+<header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <!-- li><a href="/guides">Guides</a></li -->
+                <li><a href="/api">API</a></li>
+                <li><a href="https://github.com/sebastian-lenz/typedoc">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<%- @content %>
+
+<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+<%- @partial('analytics') %>
+
+</body>
+</html>
