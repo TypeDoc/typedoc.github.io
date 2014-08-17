@@ -108,6 +108,32 @@ $ typedoc --excludeExternals
 Prevent externally resolved TypeScript files from being documented.
 
 
+### gaID
+
+```bash
+$ typedoc --gaID
+```
+
+Set the Google Analytics tracking ID and activate tracking code.
+
+
+### gaSite
+
+```bash
+$ typedoc --gaSite <site>
+```
+
+Set the site name for Google Analytics. Defaults to `auto`.
+
+
+### hideGenerator
+```bash
+$ typedoc --hideGenerator
+```
+
+Do not print the TypeDoc link at the end of the page.
+
+
 ### verbose
 
 ```bash
