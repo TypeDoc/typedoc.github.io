@@ -5,8 +5,10 @@ title: 'Home'
 
 <div class="jumbotron">
     <div class="visual">
-        <div class="container">
-            <div class="body">A documentation generator for TypeScript projects.</div>
+        <div class="container-wrap">
+            <div class="container">
+                <div class="body">A documentation generator for TypeScript projects.</div>
+            </div>
         </div>
     </div>
 </div>
