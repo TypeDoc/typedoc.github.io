@@ -10,10 +10,8 @@ var docpadConfig = {
 				'//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:400,700',
 				'/assets/css/main.css'
 			],
-			/* scripts: [
-				'//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js',
-				'/assets/js/main.js'
-			], */
+			description: 'A flexible utility that transform your TypeScript projects into beautiful HTML documentation pages.',
+            keywords: 'typedoc typescript documentation docs generator api doc doccomment comment reference automatic utility javadoc',
 			analytics: {
 				id: 'UA-53674298-1',
 				site: 'typedoc.io'
