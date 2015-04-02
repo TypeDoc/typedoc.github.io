@@ -12,8 +12,18 @@ like classes, enumerations or property types and access modifiers will be automa
 
 All comments are parsed as markdown. TypeDoc uses the Marked (https://github.com/chjj/marked) markdown parser
 and HighlightJS (https://github.com/isagalaev/highlight.js) to highlight code blocks within markdown sections.
-Additionally you can link to other classes, members or functions using double angle brackets.
 
+## Cross-Linking
+
+You can link to other classes, objects, and symbols using double brackets (`[[x]]`).
+
+```typescript
+/**
+ * An alias for [[Foobar.test2]]
+ * @param foo  See [[Foobar]] for more details
+ */
+public function test(foo: any) { }
+```
 
 ## JavaDoc tags
 
